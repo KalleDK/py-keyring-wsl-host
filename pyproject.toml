@@ -1,10 +1,11 @@
 [project]
 name = "keyring-wsl-host"
-version = "0.1.1"
+version = "0.1.4"
 description = "Keyring proxy for wsl (win part)"
 authors = [
     {name = "Kalle Aagaard", email = "git@k-moeller.dk"},
 ]
+
 dependencies = [
     "keyring>=24.2.0",
     "typer>=0.9.0",
@@ -12,6 +13,9 @@ dependencies = [
 requires-python = ">=3.10"
 readme = "README.md"
 license = {text = "MIT"}
+
+[project.urls]
+Repository = "https://github.com/KalleDK/py-keyring-wsl-host"
 
 [project.scripts]
 keyring-host = "keyring_wsl_host.__init__:main"
