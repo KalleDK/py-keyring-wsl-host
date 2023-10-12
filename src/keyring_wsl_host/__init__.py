@@ -2,11 +2,13 @@ import json
 from typing import Optional
 from keyring import get_credential, get_password, set_password, delete_password
 import typer
+from typing_extensions import Annotated
+
 
 app = typer.Typer()
 
 @app.command("cred")
-def proxy_credential(service: str, username: Optional[str] = None):
+def proxy_credential(service: str, username: Annotated[Optional[str], typer.Argument()] = None):
     p = get_credential(service, username)
     if p is None:
         print(json.dumps({"result": None}))

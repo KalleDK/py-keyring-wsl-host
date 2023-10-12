@@ -1,6 +1,6 @@
 [project]
 name = "keyring-wsl-host"
-version = "0.1.4"
+version = "0.1.5"
 description = "Keyring proxy for wsl (win part)"
 authors = [
     {name = "Kalle Aagaard", email = "git@k-moeller.dk"},
